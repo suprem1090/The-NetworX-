@@ -23,7 +23,10 @@
   .card h3 { margin-bottom:.6rem; }
   .card p { color:var(--muted); font-size:.95rem; }
   .work-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
-  .work { background:var(--surface); border-radius:14px; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; color:var(--muted); border:1px dashed #3a3a48; }
+  figure.work { background:var(--surface); border-radius:14px; overflow:hidden; margin:0; }
+  figure.work img { width:100%; height:260px; object-fit:cover; display:block; }
+  figcaption { padding:.9rem 1.2rem; font-size:.9rem; color:var(--muted); }
+  figcaption strong { color:var(--text); display:block; font-size:1rem; }
   footer { text-align:center; padding:3rem 1.5rem; color:var(--muted); font-size:.9rem; }
 </style>
 </head>
@@ -50,9 +53,26 @@
 <section id="work">
   <h2>Selected Work</h2>
   <div class="work-grid">
-    <div class="work">Your work here</div>
-    <div class="work">Your work here</div>
-    <div class="work">Your work here</div>
+    <figure class="work">
+      <img src="assets/thenetworx-logo.jpg" alt="The NetworX brand logo">
+      <figcaption><strong>The NetworX Logo</strong>Brand identity</figcaption>
+    </figure>
+    <figure class="work">
+      <img src="assets/gorilla-app-icon.jpg" alt="Gorilla app icon design">
+      <figcaption><strong>Gorilla App Icon</strong>Icon design</figcaption>
+    </figure>
+    <figure class="work">
+      <img src="assets/hog-trail-cover.jpg" alt="Hog Trail Killer reel cover">
+      <figcaption><strong>Hog Trail Killer</strong>Reel cover art</figcaption>
+    </figure>
+    <figure class="work">
+      <img src="assets/death-note-wallpaper.jpg" alt="Death Note iPhone wallpaper">
+      <figcaption><strong>Death Note Wallpaper</strong>Phone wallpaper design</figcaption>
+    </figure>
+    <figure class="work">
+      <img src="assets/thenetworx-zedge-cover.jpg" alt="The NetworX Zedge cover">
+      <figcaption><strong>NetworX Zedge Cover</strong>Creator cover art</figcaption>
+    </figure>
   </div>
 </section>
 
